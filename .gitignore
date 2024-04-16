@@ -1,1 +1,5 @@
 env/*.env
+rabbitmq/data/*
+!rabbitmq/data/.gitkeep
+rabbitmq/log/*
+!rabbitmq/log/.gitkeep
