@@ -17,6 +17,18 @@ services:
     container_name: postgres
     env_file: env/database.env
 
+  customers:
+    build:
+      context: ./customers
+
+  orders:
+    build:
+      context: ./orders
+
+  products:
+    build:
+      context: ./products
+
 networks:
   rabbitmq:
     driver: bridge
