@@ -1,0 +1,9 @@
+[submodule "products"]
+	path = products
+	url = git@github.com:easy-mspr/PaieTonKawa-products.git
+[submodule "customers"]
+	path = customers
+	url = git@github.com:easy-mspr/PaieTonKawa-customers.git
+[submodule "orders"]
+	path = orders
+	url = git@github.com:easy-mspr/PaieTonKawa-orders.git
