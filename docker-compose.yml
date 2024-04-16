@@ -20,14 +20,26 @@ services:
   customers:
     build:
       context: ./customers
+    ports:
+      - 3001:3000
+    networks:
+      - rabbitmq
 
   orders:
     build:
       context: ./orders
+    ports:
+      - 3002:3000
+    networks:
+      - rabbitmq
 
   products:
     build:
       context: ./products
+    ports:
+      - 3003:3000
+    networks:
+      - rabbitmq
 
 networks:
   rabbitmq:
