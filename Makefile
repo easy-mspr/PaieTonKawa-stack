@@ -6,7 +6,9 @@ start:
 
 update:
 	@git pull
-	@git submodule update
+	@git -C orders pull
+	@git -C products pull
+	@git -C customers pull
 
 .DEFAULT_GOAL=update
 .PHONY: init \

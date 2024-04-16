@@ -20,6 +20,7 @@ services:
   customers:
     build:
       context: ./customers
+    container_name: customers
     ports:
       - 3001:3000
     networks:
@@ -28,6 +29,7 @@ services:
   orders:
     build:
       context: ./orders
+    container_name: orders
     ports:
       - 3002:3000
     networks:
@@ -36,6 +38,7 @@ services:
   products:
     build:
       context: ./products
+    container_name: products
     ports:
       - 3003:3000
     networks:
