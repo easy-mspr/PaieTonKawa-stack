@@ -18,6 +18,8 @@ services:
     env_file: env/database.env
     networks:
       - postgres
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
 
   customers:
     build:
